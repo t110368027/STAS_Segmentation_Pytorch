@@ -96,14 +96,14 @@ $ python preprocessing.py
 ```
 
 ## 4. Train
-* All results on Public/Private are training on **remote training device** by  the GPU and hyperparameter is below [**4.0 Hyperparameter**](#40-Hyperparameter).
+* All results on Public/Private are training on **remote training device** by  the GPU and hyperparameter is below [**4.1 Hyperparameter**](#41-Hyperparameter).
 * Validation and tuning model are on **local training device**.
 
 ```
 $ python train.py
 ```
 
-### 4.0 Hyperparameter
+### 4.1 Hyperparameter
 ---
 <details>   
 <summary>Hyperparameter on Remote Traing Device</summary>   
@@ -123,7 +123,7 @@ $ python train.py
 
 ---
 
-### 4.1 Training Device
+### 4.2 Training Device
 ---
 <details>   
 <summary>Our Local Training Device</summary>   
@@ -150,7 +150,7 @@ $ python train.py
 
 ---
 
-### 4.2 Training on Your Device
+### 4.3 Training on Your Device
 :fire: **Please tune hyperparameters and set batch size depending on your GPU VRAM size**.:fire: 
 
 ```python=3.7
@@ -174,7 +174,7 @@ $ python test.py
 ```
 :fire: Choose your model `.ckpt`, model is save `./logs/.../version_/checkpoints/.ckpt`.:fire: 
 
-Replace path of `_path_model` and `_path_test_images`, which model you choose or Image Folder you want to predict.
+Replace path of `_path_model` and `_path_test_images`, which model you choose and Image Folder you want to predict `./SEG_Train_Datasets/Public_Image` or `./SEG_Train_Datasets/Private_Image`.
 ```python=3.7
 if __name__ == "__main__":
     _path_model = './logs/.../version_/checkpoints/.ckpt'
@@ -211,4 +211,4 @@ if __name__ == "__main__":
 
 ## 🛡️ License
  
-Project is distributed under [AGPL v3](https://)
+Project is distributed under [AGPL v3](https://github.com/t110368027/STAS_Segmentation_Pytorch/blob/main/LICENSE)
