@@ -169,6 +169,7 @@ trainer = pl.Trainer(accelerator="gpu", devices=[0])
 ```
 
 ## 5. Inference
+My best leaderboard score model is saved in `./logs/best/version_0/checkpoints/best_model.ckpt`.
 ```
 $ python test.py
 ```
@@ -177,8 +178,8 @@ $ python test.py
 Replace path of `_path_model` and `_path_test_images`, which model you choose and Image Folder you want to predict `./SEG_Train_Datasets/Public_Image` or `./SEG_Train_Datasets/Private_Image`.
 ```python=3.7
 if __name__ == "__main__":
-    _path_model = './logs/.../version_/checkpoints/.ckpt'
-    _path_test_images = './SEG_Train_Datasets/Public_Image'
+    _path_model = './logs/best/version_0/checkpoints/best_model.ckpt'
+    _path_test_images = './SEG_Train_Datasets/Private_Image'
     _path_test_predictions = main(path=_path_model, path_test_images=_path_test_images)
 
     print("Model Prediction done!, save to {}".format(_path_test_predictions))
