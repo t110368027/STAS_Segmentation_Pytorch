@@ -187,7 +187,7 @@ if __name__ == "__main__":
 ## Reference
 * [Pytorch](https://github.com/pytorch/pytorch)
 * [Pytorch-Lightning](https://github.com/PyTorchLightning/pytorch-lightning)
-* [Segmentation_Models.Pytorch](https://github.com/qubvel/segmentation_models.pytorch)\
+* [Segmentation_Models.Pytorch](https://github.com/qubvel/segmentation_models.pytorch)
 * [U-Net: Convolutional Networks for Biomedical Image Segmentation
 ](https://arxiv.org/pdf/1505.04597.pdf)
 * [V-Net: Fully Convolutional Neural Networks for Volumetric Medical Image Segmentation
