@@ -94,6 +94,20 @@ Before running `preprocessing.py`, please check your `./SEG_Train_Datasets/` inc
 ```
 $ python preprocessing.py
 ```
+You can check out training dataset `set.npz`  path.
+```python=3.7
+if __name__ == "__main__":
+    # define path
+    _path_train_images = make_path('./SEG_Train_Datasets/Train_Images/')
+    _path_train_mask = make_path('./SEG_Train_Datasets/Train_Masks/')
+    _path_train_annotations = make_path('./SEG_Train_Datasets/Train_Annotations/')
+    _path_dataset = './SEG_Train_Datasets/set.npz'
+
+    main(path_train_images=_path_train_images,
+         path_train_mask=_path_train_mask,
+         path_train_annotations=_path_train_annotations,
+         path_dataset=_path_dataset)
+```
 
 ## 4. Train
 * All results on Public/Private are training on **remote training device** by  the GPU and hyperparameter is below [**4.1 Hyperparameter**](#41-Hyperparameter).
