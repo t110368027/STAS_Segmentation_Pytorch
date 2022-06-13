@@ -1,8 +1,12 @@
 # STAS Competition by using Image Segmentation 
 
 ###### tags: `Github`
+It's Spread Through Air Spaces(STAS) competition in lung by using image segmentation STAS contours.
 
 **Competition Url : https://tbrain.trendmicro.com.tw/Competitions/Details/22**
+
+Our best model weight was saved at path `./logs/best/version_0/checkpoints/best.ckpt`.
+
 
 ##  Before You Start
 * Clone repo and install [**requirements.txt**](https://github.com/t110368027/STAS_Segmentation_Pytorch/blob/main/requirements.txt "requirements.txt") in a [**Python>=3.7.0**](https://www.python.org/) environment, including [**PyTorch>=1.10**](https://pytorch.org/get-started/locally/), [**PyTorch Lightining>=1.5**](https://www.pytorchlightning.ai/).
